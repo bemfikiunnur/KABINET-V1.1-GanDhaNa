@@ -1,7 +1,8 @@
 #!/bin/bash
+date=$(date +%Y-%m-%d)
+time=$(date +%T)
 git status
 git add **
-git commit -m "Upload"
+git commit -m "DATE : $date TIME: $time"
 git push origin --all
-
-echo "Done.."
+echo "UPLOAD [ DATE : $date TIME: $time ]"
